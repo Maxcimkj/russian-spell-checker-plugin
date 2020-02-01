@@ -1,0 +1,35 @@
+<idea-plugin>
+    <id>ru.mekh.idea.plugin</id>
+    <name>Russian spell checker</name>
+    <vendor url="https://www.company.com" email="maxcimkj93@gmail.com">A Company Inc.</vendor>
+
+    <description><![CDATA[
+        The plugin is using Yandex Speller for russian text spell checking.
+        User can call spell checking action from editor context menu for selected text.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <actions>
+        <group id="org.intellij.sdk.action.GroupedActions" text="Russian Spell Checker" popup="true">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+            <action class="ru.mekh.idea.plugin.spelling.cheker.action.ShowSpellingErrorForSelectionAction"
+                    id="Spell.Checking.Action"
+                    text="Spell Checking"
+                    description="SDK static grouped action example">
+                <keyboard-shortcut first-keystroke="control alt R" keymap="$default"/>
+            </action>
+            <action class="ru.mekh.idea.plugin.spelling.cheker.action.CancelSpellingErrorsAction"
+                    id="Cancel.Spelling.Error.Action"
+                    text="Cancel Spelling Errors"
+                    description="SDK static grouped action example">
+                <keyboard-shortcut first-keystroke="control alt E" keymap="$default"/>
+            </action>
+        </group>
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <editorFactoryMouseMotionListener
+                implementation="ru.mekh.idea.plugin.spelling.cheker.listener.ShowErrorTooltipMouseMotionListener"/>
+    </extensions>
+</idea-plugin>
