@@ -20,6 +20,6 @@ intellij {
 
 patchPluginXml {
     changeNotes """
-        Have been created russian spell checking plugin that use Yandex Speller for text verifying.
+        Initial release of the plugin.
       """
 }

@@ -1,11 +1,25 @@
 <idea-plugin>
     <id>ru.mekh.idea.plugin</id>
     <name>Russian spell checker</name>
-    <vendor url="https://www.company.com" email="maxcimkj93@gmail.com">A Company Inc.</vendor>
+    <vendor url="https://github.com/Maxcimkj" email="maxcimkj93@gmail.com">Maksim Mekh</vendor>
 
     <description><![CDATA[
-        The plugin is using Yandex Speller for russian text spell checking.
-        User can call spell checking action from editor context menu for selected text.
+        The plugin is using Yandex Speller for russian text spell checking.<br />
+        Plugin provide action for checking selected text and show quick fix tooltip after that.<br />
+
+        To check the spelling, select the target text inside the editor and call the "Spell Checking" action using:<br />
+        <ul>
+            <li>the keyboard shortcut "Alt + Ctrl + R"</li>
+            <li>or use the editor popup menu "Russian Spell Checker -> Spell Checking"</li>
+        </ul>
+        <br />
+        To cancel the spelling error:<br />
+        <ul>
+            <li>use the keyboard shortcut "Alt + Ctrl + E"</li>
+            <li>or use the context popup menu</li>
+        </ul>
+
+        See more usage information on <a href="https://github.com/Maxcimkj/russian-spell-checker-plugin">Github</a>.
     ]]></description>
 
     <depends>com.intellij.modules.platform</depends>
@@ -16,13 +30,13 @@
             <action class="ru.mekh.idea.plugin.spelling.cheker.action.ShowSpellingErrorForSelectionAction"
                     id="Spell.Checking.Action"
                     text="Spell Checking"
-                    description="SDK static grouped action example">
+                    description="Spell checking for selection">
                 <keyboard-shortcut first-keystroke="control alt R" keymap="$default"/>
             </action>
             <action class="ru.mekh.idea.plugin.spelling.cheker.action.CancelSpellingErrorsAction"
                     id="Cancel.Spelling.Error.Action"
                     text="Cancel Spelling Errors"
-                    description="SDK static grouped action example">
+                    description="Cancel spell checking errors">
                 <keyboard-shortcut first-keystroke="control alt E" keymap="$default"/>
             </action>
         </group>
