@@ -104,7 +104,7 @@ public class SpellingErrorHighlighterService {
      */
     public void removeAllHighlighters(Editor editor) {
         for (RangeHighlighter highlighter : spellingErrorHighlighters) {
-            editor.getMarkupModel().removeHighlighter(highlighter);
+            highlighter.dispose();
             spellingErrorHighlighters.remove(highlighter);
         }
     }
