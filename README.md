@@ -3,7 +3,7 @@ Russian Spell Checker
 
 A plugin for Intellij IDEA that give opportunity for spell checking russian text inside code. 
 
-The plugin is using Yandex Speller for russian text spell checking. 
+The plugin is using [Yandex Speller](https://yandex.ru/dev/speller/) for russian text spell checking. 
 User can call spell checking action from editor context menu for selected text.
 
 Usage
@@ -20,7 +20,7 @@ To quick fix move cursor to spelling error and use 'quickfix' inside tooltip
 ![alt text](readme/usage2.png)
 
 To cancel the spelling error:
- - use the keyboard shortcut "Alt + Ctrl + E" 
+ - use the keyboard shortcut "Alt + Ctrl + W" 
  - or use the context popup menu 
  
 ![alt text](readme/usage3.png)

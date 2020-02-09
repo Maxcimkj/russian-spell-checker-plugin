@@ -20,6 +20,6 @@ intellij {
 
 patchPluginXml {
     changeNotes """
-        Initial release of the plugin.
+        Change 'Cancel spell errors' action shortcuts to 'Alt + Ctrl + W', add more description
       """
 }
