@@ -17,12 +17,13 @@
 package ru.mekh.idea.plugin.spelling.cheker.client;
 
 
+import org.jetbrains.annotations.Nullable;
 import ru.mekh.idea.plugin.spelling.cheker.client.entity.Format;
 import ru.mekh.idea.plugin.spelling.cheker.client.entity.Lang;
 import ru.mekh.idea.plugin.spelling.cheker.client.entity.Option;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.Collections;
 import java.util.List;
@@ -37,7 +38,7 @@ import static java.util.Objects.requireNonNull;
  * @since 15.01.2020
  */
 public class YandexSpellerRequest {
-    @Nonnull
+    @NotNull
     private final String text;
     @Nullable
     private final Lang lang;
@@ -57,27 +58,27 @@ public class YandexSpellerRequest {
     /**
      * Создает новый объект билдера для {@link YandexSpellerRequest}
      */
-    @Nonnull
+    @NotNull
     public static Builder builder() {
         return new Builder();
     }
 
-    @Nonnull
+    @NotNull
     public String getText() {
         return text;
     }
 
-    @Nonnull
+    @NotNull
     public Optional<Lang> getLang() {
         return Optional.ofNullable(lang);
     }
 
-    @Nonnull
+    @NotNull
     public List<Option> getOptions() {
         return options;
     }
 
-    @Nonnull
+    @NotNull
     public Optional<Format> getFormat() {
         return Optional.ofNullable(format);
     }
@@ -104,7 +105,7 @@ public class YandexSpellerRequest {
         private Builder() {
         }
 
-        public Builder withText(@Nonnull String text) {
+        public Builder withText(@NotNull String text) {
             this.text = text;
             return this;
         }
@@ -127,7 +128,7 @@ public class YandexSpellerRequest {
         /**
          * Собрать объект
          */
-        @Nonnull
+        @NotNull
         public YandexSpellerRequest build() {
             return new YandexSpellerRequest(text, lang, options, format);
         }

@@ -27,7 +27,7 @@ import org.apache.http.impl.client.HttpClients;
 import ru.mekh.idea.plugin.spelling.cheker.client.entity.Option;
 import ru.mekh.idea.plugin.spelling.cheker.client.entity.SpellResult;
 
-import javax.annotation.Nonnull;
+import org.jetbrains.annotations.NotNull;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -84,7 +84,7 @@ public class YandexSpellerHttpClient {
      * @param request - request with text and options
      * @return found errors
      */
-    public YandexSpellerResponse checkText(@Nonnull YandexSpellerRequest request) {
+    public YandexSpellerResponse checkText(@NotNull YandexSpellerRequest request) {
         requireNonNull(request);
 
         try {

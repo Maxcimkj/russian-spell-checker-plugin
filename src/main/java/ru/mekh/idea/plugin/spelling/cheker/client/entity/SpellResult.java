@@ -18,7 +18,7 @@ package ru.mekh.idea.plugin.spelling.cheker.client.entity;
 
 import com.google.gson.annotations.SerializedName;
 
-import javax.annotation.Nonnull;
+import org.jetbrains.annotations.NotNull;
 import java.util.List;
 
 /**
@@ -58,7 +58,7 @@ public class SpellResult {
     @SerializedName("s")
     private final List<String> variants;
 
-    public SpellResult(@Nonnull SpellError code, int pos, int row, int col, int len, String word, List<String> variants) {
+    public SpellResult(@NotNull SpellError code, int pos, int row, int col, int len, String word, List<String> variants) {
         this.code = code;
         this.pos = pos;
         this.row = row;

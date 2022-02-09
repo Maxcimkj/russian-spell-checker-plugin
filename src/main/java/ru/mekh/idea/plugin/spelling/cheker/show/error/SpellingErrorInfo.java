@@ -16,7 +16,7 @@
 
 package ru.mekh.idea.plugin.spelling.cheker.show.error;
 
-import javax.annotation.Nonnull;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Spelling error information
@@ -28,17 +28,17 @@ public class SpellingErrorInfo {
     private final String errorWord;
     private final String expectedFix;
 
-    public SpellingErrorInfo(@Nonnull String errorWord, @Nonnull String expectedFix) {
+    public SpellingErrorInfo(@NotNull String errorWord, @NotNull String expectedFix) {
         this.errorWord = errorWord;
         this.expectedFix = expectedFix;
     }
 
-    @Nonnull
+    @NotNull
     public String getErrorWord() {
         return errorWord;
     }
 
-    @Nonnull
+    @NotNull
     public String getExpectedFix() {
         return expectedFix;
     }
