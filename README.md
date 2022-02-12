@@ -31,7 +31,7 @@ Installation
 Download and install *Russian spell checker* plugin directly from Intellij IDEA:
 `Preferences/Settings->Plugins->Browse Repositories`
 
-Alternatively, you can [download the plugin](http://plugins.jetbrains.com/plugin/13753?pr=idea) from the jetbrains plugin site and install it manually in:
+Alternatively, you can [download the plugin](https://plugins.jetbrains.com/plugin/13763-russian-spell-checker) from the jetbrains plugin site and install it manually in:
 `Preferences/Settings->Plugins->Install plugin from disk`
 
 License
