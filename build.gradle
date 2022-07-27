@@ -15,11 +15,11 @@ dependencies {
 
 
 intellij {
-    version = '2021.3'
+    version = '2022.1'
 }
 
 patchPluginXml {
     changeNotes = """
-         Update to support version 2021.3
+         Update to support version 2022.1
       """
 }
